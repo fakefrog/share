@@ -10,12 +10,12 @@ import java.util.Arrays;
 public class MergeSort {
 
     public static void main(String[] args) {
-        int[] ints = {3, 4, 1, 5, 9, 6, 7, 2, 10, 6, 12, 1};
-        mergerSort(ints, 0, ints.length - 1);
-        System.out.println(Arrays.toString(ints));
+        int[] nums = {3, 4, 1, 5, 9, 6, 7, 2, 10, 6, 12, 1};
+        mergerSort(nums, 0, nums.length - 1);
+        System.out.println(Arrays.toString(nums));
     }
 
-    public static void mergerSort(int[] ins, int start, int end) {
+    public static void mergerSort(int[] nums, int start, int end) {
     }
 
 }

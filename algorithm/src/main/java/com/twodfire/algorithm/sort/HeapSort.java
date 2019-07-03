@@ -10,9 +10,9 @@ import java.util.Arrays;
 public class HeapSort {
 
     public static void main(String[] args) {
-        int[] ints = {5, 8, 5, 7, 6, 7, 9, 1, 7, 3};
-        heapSort(ints);
-        System.out.println(Arrays.toString(ints));
+        int[] nums = {5, 8, 5, 7, 6, 7, 9, 1, 7, 3};
+        heapSort(nums);
+        System.out.println(Arrays.toString(nums));
     }
 
     public static void heapSort(int[] array) {

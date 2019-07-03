@@ -10,12 +10,12 @@ import java.util.Arrays;
 public class FastSort {
 
     public static void main(String[] args) {
-        int[] array = new int[]{4, 7, 2, 1, 5, 3, 8, 6};
-        fastSort(array, 0, array.length - 1);
-        System.out.println(Arrays.toString(array));
+        int[] nums = new int[]{4, 7, 2, 1, 5, 3, 8, 6};
+        fastSort(nums, 0, nums.length - 1);
+        System.out.println(Arrays.toString(nums));
     }
 
-    public static void fastSort(int[] array, int start, int end) {
+    public static void fastSort(int[] nums, int start, int end) {
     }
 
 }
