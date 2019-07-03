@@ -16,6 +16,30 @@ public class FastSort {
     }
 
     public static void fastSort(int[] nums, int start, int end) {
+        if (start >= end) {
+            return;
+        }
+        int posValue = nums[start];
+        int l = start;
+        int r = end;
+        while (l < r) {
+            while (l < r && nums[r] >= posValue) {
+                r--;
+            }
+            while (l < r && nums[l] <= posValue) {
+                l++;
+            }
+            if (l != r) {
+                int temp = nums[l];
+                nums[l] = nums[r];
+                nums[r] = temp;
+            }
+        }
+        int temp = nums[start];
+        nums[start] = nums[l];
+        nums[l] = temp;
+        fastSort(nums, start, l - 1);
+        fastSort(nums, l + 1, end);
     }
 
 }
