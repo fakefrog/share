@@ -44,6 +44,26 @@ public class LongestCommonSubQueue {
     }
 
     private static void traverse(String s1, String s2, int[][] dir) {
+        int i = s1.length();
+        int j = s2.length();
+        StringBuilder sb = new StringBuilder();
+        while (i > 0 && j > 0) {
+            switch (dir[i][j]) {
+                case 0b01:
+                    j--;
+                    break;
+                case 0b10:
+                    i--;
+                    break;
+                case 0b11:
+                    sb.append(s1.charAt(--i));
+                    j--;
+                    break;
+                default:
+                    //规范说要加default
+            }
+        }
+        System.out.println(sb.reverse().toString());
     }
 
 }
