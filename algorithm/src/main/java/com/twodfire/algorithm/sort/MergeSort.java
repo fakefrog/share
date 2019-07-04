@@ -1,14 +1,11 @@
 package com.twodfire.algorithm.sort;
 
-import com.sun.deploy.uitoolkit.impl.text.TextWindow;
-import com.sun.media.sound.SoftMixingDataLine;
-
 import java.util.Arrays;
 
 /**
  * @author baiyundou
  * @date 18:32 2019/7/3
- * @description
+ * @description 归并排
  */
 public class MergeSort {
 

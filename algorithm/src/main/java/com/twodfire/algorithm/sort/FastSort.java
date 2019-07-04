@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author baiyundou
  * @date 18:32 2019/7/3
- * @description
+ * @description 快排
  */
 public class FastSort {
 
