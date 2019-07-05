@@ -8,21 +8,19 @@ package com.twodfire.algorithm;
 public class Fibonacci {
 
     public static void main(String[] args) {
-/*
         long l = System.currentTimeMillis();
         long result = recursion(45);
 //        int result = iter(45);
         System.out.println(result);
         long l1 = System.currentTimeMillis();
         System.out.println("cost:" + (l1 - l));
-*/
 
-        Long[] resultSet = new Long[65536];
+/*        Long[] resultSet = new Long[65536];
         resultSet[0] = 1L;
         resultSet[1] = 1L;
         resultSet[2] = 2L;
         long l = recursionWithRemember(65536, resultSet);
-        System.out.println(l);
+        System.out.println(l);*/
     }
 
     private static long iter(int n) {
