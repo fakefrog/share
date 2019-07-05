@@ -30,23 +30,6 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-        <!--出现spring boot Configuration Annotation Proessor not found in classpath的提示是
-        在用了@ConfigurationProperties这个注解时，所以问题出现在ConfigurationProperties注解。
-        根据提示的not found in classpath,查询此注解的使用关于怎么指定classpath,进而查询location，
-        spring boot1.5以上版本@ConfigurationProperties取消location注解-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
-        </dependency>
-
-        <!--mysql-connector-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>6.0.6</version>
-        </dependency>
-
     </dependencies>
 
     <build>
