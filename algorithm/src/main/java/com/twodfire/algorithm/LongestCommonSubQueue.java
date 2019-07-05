@@ -28,8 +28,8 @@ public class LongestCommonSubQueue {
         for (int i = 1; i <= s1.length(); i++) {
             for (int j = 1; j <= s2.length(); j++) {
                 if (s1.charAt(i - 1) == s2.charAt(j - 1)) {
-                    result[i][j] = result[i - 1][j - 1] + 1;
                     dir[i][j] = 0b11;
+                    result[i][j] = result[i - 1][j - 1] + 1;
                 } else if (result[i][j - 1] > result[i - 1][j]) {
                     dir[i][j] = 0b01;
                     result[i][j] = result[i][j - 1];
