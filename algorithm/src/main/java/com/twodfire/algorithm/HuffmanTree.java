@@ -18,18 +18,27 @@ public class HuffmanTree {
 
         public Integer weight = 0;
 
+        /**
+         *是否被用过
+         */
         public boolean used = false;
 
+        /**
+         *是1吗
+         */
         public boolean one;
 
+        /**
+         *最后的编码Code
+         */
         public String code;
 
     }
 
     public static void main(String[] args) {
         String s = "hello";
-        ArrayList<Character> list = new ArrayList<Character>();
-        ArrayList<Node> nodes = new ArrayList<Node>();
+        ArrayList<Character> list = new ArrayList<>();
+        ArrayList<Node> nodes = new ArrayList<>();
         char[] sChars = s.toCharArray();
         for (int i = 0; i < s.length(); i++) {
             if (!list.contains(sChars[i])) {
@@ -73,7 +82,6 @@ public class HuffmanTree {
     }
 
     private static Node findTheLeast(Node[] nodeArray, int index) {
-
         Node[] nodes = new Node[index + 1];
         System.arraycopy(nodeArray, 0, nodes, 0, nodes.length);
         List<Node> nodesList = Arrays.asList(nodes);
